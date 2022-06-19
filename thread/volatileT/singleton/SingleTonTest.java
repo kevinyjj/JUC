@@ -1,4 +1,4 @@
-package com.example.demo.volatileT.singleton;
+package com.example.demo.thread.volatileT.singleton;
 
 /**
  * 单例带来线程安全问题，锁的颗粒细化

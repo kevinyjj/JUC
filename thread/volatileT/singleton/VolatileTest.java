@@ -1,4 +1,4 @@
-package com.example.demo.volatileT.singleton;
+package com.example.demo.thread.volatileT.singleton;
 
 import java.util.concurrent.TimeUnit;
 

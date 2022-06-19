@@ -1,9 +1,6 @@
 package com.example.demo.aop;
 
 
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.sun.org.apache.xpath.internal.operations.String;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
@@ -45,8 +42,8 @@ public class LogAspect {
         if(joinPoint.getArgs().length == 0) {
             requestLog.append("ARGS = {} ");
         } else {
-            requestLog.append("ARGS = " + new ObjectMapper().setSerializationInclusion(JsonInclude.Include.NON_NULL)
-                    .writeValueAsString(joinPoint.getArgs()[0]) + "");
+            /*requestLog.append("ARGS = " + new ObjectMapper().setSerializationInclusion(JsonInclude.Include.NON_NULL)
+                    .writeValueAsString(joinPoint.getArgs()[0]) + "");*/
         }
 
         logger.info(requestLog.toString());

@@ -1,4 +1,4 @@
-package com.example.demo.volatileT.singleton;
+package com.example.demo.thread.volatileT.singleton;
 
 /**
  * 单例线程安全，双重检查

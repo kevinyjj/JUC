@@ -1,4 +1,4 @@
-package com.example.demo.lock;
+package com.example.demo.thread.lock;
 
 import java.util.concurrent.Semaphore;
 

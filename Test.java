@@ -1,13 +1,14 @@
 package com.example.demo;
 
-import com.alibaba.fastjson.JSONArray;
+import com.example.demo.config.AppConfig;
 import com.example.demo.reflection.Person;
-import net.sf.json.JSONObject;
-import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import java.util.*;
+import java.lang.reflect.Method;
+import java.util.Base64;
+import java.util.TreeMap;
 
 public class Test {
     private final static Logger log = LoggerFactory.getLogger(Test.class);
@@ -47,9 +48,7 @@ public class Test {
         //返回关联的值
         //给定关键元素“ 4”"4"
         //显示返回值元素
-        System.out.println("tm.get(4): " + tm.get(4));
-        String a = null;
-        tm.get(a);*/
+        System.out.println("tm.get(4): " + tm.get(4));*/
 
 
 

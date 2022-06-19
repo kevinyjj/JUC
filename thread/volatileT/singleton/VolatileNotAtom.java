@@ -1,24 +1,22 @@
-package com.example.demo.atomic;
+package com.example.demo.thread.volatileT.singleton;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * volatile能保证可见性、禁止指令重排序
  * 不能保证原子性
- * 原子性用automic操作
  */
-public class AtomicIntegerTest {
-     AtomicInteger count = new AtomicInteger();
+public class VolatileNotAtom {
+    volatile int count = 0;
     /*synchronized*/ void m(){
         for(int i=0;i<10000;i++){
-            count.incrementAndGet();
+            count++;
         }
     }
 
     public static void main(String[] args) {
-        AtomicIntegerTest t = new AtomicIntegerTest();
+        VolatileNotAtom t = new VolatileNotAtom();
         List<Thread> threads = new ArrayList<>();
 
         for(int i=0;i<10;i++){

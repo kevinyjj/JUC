@@ -2,7 +2,7 @@ package com.example.demo.reflection;
 
 import com.sun.org.apache.xpath.internal.SourceTree;
 import org.springframework.stereotype.Component;
-import org.springframework.transaction.annotation.Transactional;
+//import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.PostConstruct;
 
@@ -43,7 +43,7 @@ public class Person {
     public String showInfo() {
         return "name=" + name + ", age=" + age;
     }
-    @Transactional
+    //@Transactional
     public void say(){
         System.out.println("Person say Hello ! ");
     }

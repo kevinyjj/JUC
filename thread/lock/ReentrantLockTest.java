@@ -1,6 +1,5 @@
-package com.example.demo.lock;
+package com.example.demo.thread.lock;
 
-import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class ReentrantLockTest {
